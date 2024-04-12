@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head><script src="https://kit.fontawesome.com/16dc9b612e.js" crossorigin="anonymous"></script>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">SRIVSNU</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="https://srivsnu.my.canva.site/edu-intern" target="_blank">Edu & Internships</a></li>
+          <li><a href="https://srivsnu.my.canva.site/projects" target="_blank">Projects</a></li>
+          <li><a href="mailto:srivsnu@gmail.com" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>SRI VISHNU</span><br /></h1>
+                <div class="container">
+                    <span class="text static-txt" style="font-weight: 400;">a </span>
+                    <span class="text dynamic-txt">UI/UX DEESIGNER</span>
+                </div>
+                <script>
+                    const text=document.querySelector(".dynamic-txt");
+                    const textLoad =()=>{
+                        setTimeout(()=>{
+                            text.textContent = "UI/UX DESIGNER";
+                        },0);
+                        setTimeout(()=>{
+                            text.textContent = "FULLSTACK DEVELOPER";
+                        },4000);
+                        setTimeout(()=>{
+                            text.textContent = "FREELANCE VIDEO EDITOR";
+                        },8000);
+                    }
+
+                    textLoad();
+                    setInterval(textLoad,12000);
+                </script>
+          
+          <p class="description">
+            Welcome to my profile. I'm a full stack developer and creative UI/UX Designer
+            with a passion for creating beautiful and stunning user friendly interfaces
+            and projects. I've worked on a variety of web projects, ranging from blogs to 
+            e-commerce platforms.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.youtube.com/@vsnuvlogs" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/srivsnu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.github.com/SRIVSNU/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sri-vishnu-962173250" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+          <div class="action__btns">
+            <a href="https://srivsnu.my.canva.site/srivsnuportfolio" target="_blank"><button class="portfolio">Editor Portfolio</button></a>
+            <a href="https://drive.google.com/file/d/1kugZgCS86zPT2UHPSmxzlzZU5CPEz0TP/view?usp=sharing"><button class="hire__me">Download Resume</button></a>
+            
+          </div>
+        </div>
+        <div class="image">
+          <img src="profile.png" alt="profile" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </body>
+</html>
