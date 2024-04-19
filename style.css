@@ -24,7 +24,14 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
+}
+
+/* Media query for larger screens (e.g., laptops) */
+@media (min-width: 1200px) {
+  .section__container {
+    padding: 10rem 5rem; /* Adjust padding for laptop screens */
+  }
 }
 
 
@@ -192,10 +199,11 @@ ul li a:hover {
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-right: 55px;
+    margin-right: 40px;
     color:black;
     display: inline-block;
     transition: trasform 0.5s;
+    
 }
 .social-icons a:hover{
     color:var(--primary-color);
@@ -237,13 +245,42 @@ overflow: hidden;
         left: 0%;
     }
 }
-/*----------------------------------------------------------------*/
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
 
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #f5f5f5, #000000); /* Gradient background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffa100; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe9d2; /* Color of the scrollbar thumb on hover */
+}
+/*----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .container .text {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }}
+  @media (max-width: 1200px) {
+    .container .text {
+      font-size: 1.6rem; /* Adjust font size for tablet screens */
+    }}
+    
 /*----------------------------------------------------------------*/
 
 @media (width < 750px) {
   nav .checkbox {
     display: block;
+    
+  }
+  html {
+    scroll-behavior: smooth;
   }
 
   ul {
@@ -279,4 +316,5 @@ overflow: hidden;
   .action__btns {
     margin: auto;
   }
+
 }
