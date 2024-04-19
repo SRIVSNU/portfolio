@@ -317,4 +317,8 @@ overflow: hidden;
     margin: auto;
   }
 
+  .social-icons a{
+    align-items: center;
+  }
+  
 }
