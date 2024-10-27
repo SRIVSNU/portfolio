@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #ffa100;
-  --primary-color-dark: #ffa100;
-  --secondary-color: #ffa100;
+  --primary-color: #a069e7;
+  --primary-color-dark: #a069e7;
+  --secondary-color: #a069e7;
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --extra-light: #ffffff;
@@ -139,6 +139,7 @@ ul li a:hover {
 }
 
 .description {
+  text-align: justify;
   line-height: 1.5rem;
   color: var(--text-light);
   margin-bottom: 2rem;
@@ -233,7 +234,7 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     background-color: #ffffff;
-    border-left: 2px solid #ffa100;
+    border-left: 2px solid #a069e7;
     animation: animate 4s steps(12) infinite;
 }
 
@@ -255,7 +256,7 @@ overflow: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffa100; /* Color of the scrollbar thumb */
+  background: #a069e7; /* Color of the scrollbar thumb */
   border-radius: 5px; /* Rounded corners for the thumb */
 }
 
@@ -320,5 +321,5 @@ overflow: hidden;
   .social-icons a{
     align-items: center;
   }
-  
+
 }
