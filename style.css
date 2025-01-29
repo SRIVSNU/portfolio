@@ -150,18 +150,30 @@ ul li a:hover {
   gap: 1rem;
 }
 
+
 .action__btns button {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 1rem 2rem;
   outline: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
+  border: none(--primary-color);
+  border-radius: 2px;
   transition: 0.3s;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
+.action__btns button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a855f7; /* Purple shadow */
+  top: 5px; /* Adjust shadow position */
+  left: 5px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
 
 
 .hire__me {
