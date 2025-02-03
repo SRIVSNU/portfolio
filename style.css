@@ -150,30 +150,43 @@ ul li a:hover {
   gap: 1rem;
 }
 
-
 .action__btns button {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 1rem 2rem;
   outline: none;
-  border: none(--primary-color);
-  border-radius: 2px;
-  transition: 0.3s;
-  cursor: pointer; 
+  border: 3px solid var(--primary-color); /* Border uses primary color */
+  border-radius: 5px;
+  position: relative;
+  background: var(--primary-color); /* Default background */
+  color: white; /* Default text color */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: blink-border 1s infinite alternate; /* Glowing border animation */
+  box-shadow: 0 0 10px var(--primary-color); /* Initial glow */
 }
 
-.action__btns button::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #a855f7; /* Purple shadow */
-  top: 5px; /* Adjust shadow position */
-  left: 5px;
-  z-index: -1;
-  transition: all 0.3s ease;
+/* Hover Effect */
+.action__btns button:hover {
+  background: white; /* Background turns white */
+  color: black; /* Text turns black */
+  border-color: black; /* Border turns black */
+  box-shadow: 0 0 15px black; /* Glow effect on hover */
 }
+
+/* Blinking Border Animation */
+@keyframes blink-border {
+  0% {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  100% {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+}
+
 
 
 .hire__me {
